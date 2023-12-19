@@ -1,0 +1,84 @@
+<html>
+<body bgcolor=#d4a3ae>
+	<h3>Video Game Global Sales Prediction</h3>
+
+<div>
+<form action="/predict" method="POST">
+	<label for="plt">Platform</label>
+	<select id="plt" name="plt">
+	<option value="7">X360</option>
+	<option value="2">PS3</option>
+	<option value="8">XB</option>
+	<option value="0">PC</option>
+	<option value="5">Wii</option>
+	<option value="4">PSP</option>
+	<option value="3">PS4</option>
+	<option value="1">PS</option>
+	<option value="9">Xone</option>
+	<option value="6">WiiU</option>
+	</select>
+	<br>
+	<label for="yor">Year_of_Release</label>
+	<select id="yor" name="yor">
+	<option value="2005">2005</option>
+	<option value="2006">2006</option>
+	<option value="2007">2007</option>
+	<option value="2008">2008</option>
+	<option value="2009">2009</option>
+	<option value="2010">2010</option>
+	<option value="2011">2011</option>
+	<option value="2012">2012</option>
+	</select>
+	<br>
+	<label for="gen">Genre</label>
+	<select id="gen" name="gen">
+	<option value="0">Action</option>
+	<option value="10">Sports</option>
+	<option value="8">Shooter</option>
+	<option value="6">Racing</option>
+	<option value="7">Role-Playing</option>
+	</select>
+	<br>
+	<label for="pub">Publisher</label>
+	<select id="pub" name="pub">
+	<option value="57">Electronic Arts</option>
+	<option value="9">Activision</option>
+	<option value="225">Ubisoft</option>
+	<option value="150">Nintendo</option>
+	</select>
+	<br>
+	<label for="Critic_Score">Critic_Score </label>
+	<input type="text" id="Critic_Score" name="Critic_Score">btw:[1-100]
+	<br>
+	<label for="Critic_Count">Critic_Count </label>
+	<input type="text" id="Critic_Count" name="Critic_Count">btw:[1-100]
+	<br>
+	<label for="User_Score">User_Score </label>
+	<input type="text" id="User_Score" name="User_Score">btw:[1-100]
+	<br>
+	<label for="Rating">Rating</label>
+	<select id="Rating" name="Rating">
+	<option value="6">T</option>
+	<option value="1">E</option>
+	<option value="4">M</option>
+	<option value="2">E10+</option>
+	</select>
+	<br>
+	<label for="NA_Sales">NA_Sales </label>
+	<input type="text" id="NA_Sales" name="NA_Sales">btw:[0-100]
+	<br>
+	<label for="EU_Sales">EU_Sales </label>
+	<input type="text" id="EU_Sales" name="EU_Sales">btw:[0-100]
+	<br>
+	<label for="Other_Sales">Other_Sales </label>
+	<input type="text" id="Other_Sales" name="Other_Sales">btw:[1-100]
+	<br>
+	<label for="JP_Sales">JP_Sales </label>
+	<input type="text" id="JP_Sales" name="JP_Sales">btw:[1-100]
+	<br>
+	
+	<input type="submit" value="predict!">
+</form>
+</div>
+</body>
+</html>
