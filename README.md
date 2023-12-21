@@ -1,1 +1,1 @@
-CDAC Mini Project: video game sales prediction
+Mini Project: video game sales prediction
